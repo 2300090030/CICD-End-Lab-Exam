@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  hms-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hms-frontend:latest
+    container_name: hms-frontend
+    ports:
+      - "3000:80"
+    restart: always
